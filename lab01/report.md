@@ -28,11 +28,17 @@ Find univer first:
 https://api.vk.com/method/database.getUniversities?country_id=1&city_id=1&count=800&access_token=TOKEN&v=5.85
 
 1) GET https://api.vk.com/method/database.getFaculties?university_id=250&access_token=TOKEN&v=5.85
+
 Response: 200 OK
+
 Content-Encoding: gzip
+
 Content-Type: application/json; charset=utf-8
+
 Server: Internet Information Services (nginx)
+
 X-Powered-By: PHP/3.16762
+
 {
     "response": {
         "count": 20,
