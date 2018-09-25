@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>POST</title>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+    <h1>Введите данные</h1>
+    <form method="post" name="postUserForm">
+        <input type="hidden" name="id" value="0" />
+        <label>Имя</label><br>
+        <input type="text" name="name" /><br><br>
+        <label>Возраст</label><br>
+        <input type="number" name="age" /><br><br>
+        <input type="submit" value="Отправить" />
+    </form>
+    <br>
+    <a href="/">На главную</a>
+    
+    <script>
+
+        // Добавление пользователя
+        function CreateUser(userName, userAge) {
+            $.ajax({
+                url: "crud/users",
+                contentType: "application/json",
+                method: "POST",
+                data: JSON.stringify({
+                    name: userName,
+                    age: userAge
+                }),
+                success: function () {
+                    console.log("User create success!");
+                }
+            })
+        }
+
+        // отправка формы
+        $("form").submit(function (e) {
+            e.preventDefault();
+            var id = this.elements["id"].value;
+            var name = this.elements["name"].value;
+            var age = this.elements["age"].value;
+            if (id == 0) {
+                CreateUser(name, age);
+            }
+            else
+                EditUser(id, name, age);
+        });
+    </script>
+</body>
+<html>
