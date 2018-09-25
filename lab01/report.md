@@ -27,7 +27,7 @@ Work with vk.com APIs
 Find univer first:
 https://api.vk.com/method/database.getUniversities?country_id=1&city_id=1&count=800&access_token=TOKEN&v=5.85
 
-1) GET https://api.vk.com/method/database.getFaculties?university_id=250&access_token=TOKEN&v=5.85
+1. GET https://api.vk.com/method/database.getFaculties?university_id=250&access_token=TOKEN&v=5.85
 
 Response: 200 OK
 
@@ -127,7 +127,7 @@ X-Powered-By: PHP/3.16762
     }
 }
 
-2) Аватарка может быть получена следующим способом:
+2. Аватарка может быть получена следующим способом:
 GET https://api.vk.com/method/users.get?fields=photo&access_token=TOKEN&v=5.85
 В response будет поле вида:
 "photo": "https://pp.userapi.com/QT4Yj0RZwIZ_********5CTTAA9msa7HqmkWlw/********.jpg?ava=1"
