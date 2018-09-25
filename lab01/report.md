@@ -1,24 +1,24 @@
-Request				Type			Status
-----------------------------------------------
-					OPTIONS
-http://mail.ru						400
-http://ya.ru 						403
-www.rambler.ru 						403
-https://www.google.ru 				405
-https://github.com/ 				404
-www.apple.com/ 						200
-					HEAD
-vk.com 								501
-www.apple.com 						200
-www.msn.com 						200
-					GET
-yandex.ru 							200
-google.com 							200
-apple.com 							200
-					POST
-yandex.ru 							403
-google.com 							405
-apple.com 							200
+Request		| Type	|	Status
+----------------|-------|--------------------------------
+|OPTIONS|
+http://mail.ru	|	|	400
+http://ya.ru	|	|	403
+www.rambler.ru	|	|	403
+https://www.google.ru	|	|	405
+https://github.com/	|	|	404
+www.apple.com/	|	|	200
+|HEAD|
+vk.com	|	|	501
+www.apple.com	|	|	200
+www.msn.com	|	|	200
+|GET|
+yandex.ru	|	|	200
+google.com	|	|	200
+apple.com	|	|	200
+|POST|
+yandex.ru	|	|	403
+google.com	|	|	405
+apple.com	|	|	200
 ----------------------------------------------
 
 ---------------------
@@ -46,7 +46,7 @@ X-Powered-By: PHP/3.16762
                 "title": "Факультет инженерного бизнеса и менеджмента"
             },
             {
-                "id": 1033,
+                "id": 103
                 "title": "Факультет информатики и систем управления"
             },
             {
